@@ -12,20 +12,30 @@
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <div class="heading">
-                    <div class="search">SEARCH BAR</div>
+            <div class="navbar">
+                <div class="header">
+                    <div class="search">
+                        ()
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="Search..."
+                        />
+                    </div>
                     <div class="user-status">
                         <div class="notification-bell">()</div>
-                        <div class="avatar">()</div>
-                        <h2>Alex Burke</h2>
+                        <div class="profile-avatar">()</div>
+                        <div class="user-name">Alex Burke</div>
                     </div>
                 </div>
                 <div class="greeting">
                     <div class="user-greeting">
                         <div class="avatar-large">()</div>
-                        <h4>Hi there,</h4>
-                        <h1>Alex Burke</h1>
+                        <div class="hello-user">
+                            <h4>Hi there,</h4>
+                            <h2>Alex Burke</h2>
+                        </div>
                     </div>
                     <div class="buttons">
                         <button class="new">New</button
@@ -34,31 +44,29 @@
                     </div>
                 </div>
             </div>
+
             <div class="sidebar">
                 <div class="dashboard">
                     <h1>() Dashboard</h1>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Profile</li>
-                        <li>Messages</li>
-                        <li>History</li>
-                        <li>Tasks</li>
-                        <li>Communities</li>
-                    </ul>
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>Settings</li>
-                        <li>Support</li>
-                        <li>Privacy</li>
-                    </ul>
-                </div>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                    <li>&nbsp;</li>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
             </div>
-            <div class="body">
+            <div class="content-body">
                 <div class="projects">
-                    <div class="project-header">Your Projects</div>
+                    <div class="project-header">
+                        <h2>Your Projects</h2>
+                    </div>
                     <div class="cards">
                         <h3>Super Cool Project</h3>
                         <p>
@@ -118,80 +126,77 @@
                         </p>
                     </div>
                 </div>
-                <div class="announcements">
-                    <div class="announcement-header">Announcements</div>
-                    <div class="item">
-                        <h3>Site Maintenance</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Nostrum ipsa sapiente consectetur iure cumque
-                            beatae recusandae possimus quidem nulla, velit
-                            dolores excepturi deserunt rerum ullam qui similique
-                            ut, doloremque soluta.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h3>Community Share Day</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quis iste expedita deserunt et vel eveniet
-                            quos magnam nihil repellendus, labore nostrum
-                            assumenda neque minus earum aspernatur sed voluptas
-                            reprehenderit. Optio?
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h3>Updated Policy</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Maiores, quaerat. Quasi qui dignissimos
-                            tempora dolores quia vel, alias voluptate minus.
-                            Consectetur iusto esse nihil necessitatibus
-                            doloribus dolores autem suscipit tempora!
-                        </p>
-                    </div>
-                </div>
-                <div class="trends">
-                    <div class="trends-header">Trending</div>
-                    <div class="users">
-                        <div class="icon">()</div>
-                        <div class="author">
-                            @dadams
-                            <p>Make Your Own Towel</p>
+                <div class="side-content">
+                    <div class="announcements">
+                        <div class="announcement-header">
+                            <h2>Announcements</h2>
+                        </div>
+                        <div id="announcement-item-1">
+                            <h3>Site Maintenance</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                            </p>
+                        </div>
+                        <hr />
+                        <div id="announcement-item-2">
+                            <h3>Community Share Day</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                        </div>
+                        <hr />
+                        <div id="announcement-item-3">
+                            <h3>Updated Policy</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="users">
-                        <div class="icon">()</div>
-                        <div class="author">
-                            @rbradbury
-                            <p>Stories from Mars</p>
+                    <div class="trends">
+                        <div class="trends-header"><h2>Trending</h2></div>
+                        <div class="trends-items">
+                            <div class="icon">()</div>
+                            <div class="author">
+                                @dadams
+                                <p>Make Your Own Towel</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="users">
-                        <div class="icon">()</div>
-                        <div class="author">
-                            @kvonnegut
-                            <p>Harrison's Real Issue</p>
+                        <div class="trends-items">
+                            <div class="icon">()</div>
+                            <div class="author">
+                                @rbradbury
+                                <p>Stories from Mars</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="users">
-                        <div class="icon">()</div>
-                        <div class="author">
-                            @cmoore
-                            <p>Whale Watching 101</p>
+                        <div class="trends-items">
+                            <div class="icon">()</div>
+                            <div class="author">
+                                @kvonnegut
+                                <p>Harrison's Real Issue</p>
+                            </div>
+                        </div>
+
+                        <div class="trends-items">
+                            <div class="icon">()</div>
+                            <div class="author">
+                                @cmoore
+                                <p>Whale Watching 101</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
-                ©aburke76
-                <a id="gh-icon" href="https://github.com/aburke76"
-                    ><i class="fa-brands fa-github"></i
-                ></a>
-            </footer>
         </div>
+        <footer>
+            ©aburke76&nbsp;
+            <a id="gh-icon" href="https://github.com/aburke76"
+                ><i class="fa-brands fa-github"></i
+            ></a>
+        </footer>
     </body>
 </html>
